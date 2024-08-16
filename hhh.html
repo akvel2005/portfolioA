@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        /* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('laptop.jpg');
+            background-size: cover;
+            color: #f9f7fc;
+        }
+
+        header {
+            background: rgba(17, 2, 2, 0.5);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: circle;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            letter-spacing: 2.4px;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            margin: auto;
+            width: 300px;
+        }
+
+        .email {
+            text-align: center;
+            letter-spacing: 2.4%;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #1fe12f;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#my-contact">My Contact</a></li>
+            </ul>
+        </nav>
+        <h1>A. AKASH VELAN</h1>
+        <p>IT Student in National Engineering College.</p>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I’m Akash Velan, a student at National Engineering College with a keen interest in front-end development. I am passionate about creating intuitive and visually appealing user interfaces and am eager to pursue a career in IT roles focused on front-end technologies. I enjoy staying current with industry trends and applying my skills to build engaging web experiences.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="bookstore.jpg" alt="Project 1">
+                    <p>Online Book Store</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="library.jpg" alt="Project 2">
+                    <p>Library Management System</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="scheduler-78-min.jpg" alt="Project 3">
+                    <p>Time Table Scheduler (in progress)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="my-contact">
+        <div class="container">
+            <h2>My Contact</h2>
+            <div class="email">
+                <h3>Get in touch:</h3>
+                <a href="mailto:akvel2005@gmail.com">akvel2005@gmail.com</a>
+                <br><br>
+                <a href="https://www.linkedin.com/in/akash-velan-a-6719b62b3">LinkedIn</a>
+                <br><br>
+                <a href="tel:6382695887">Mobile Number</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <marquee>&copy; 2024 AKASH VELAN. A. All rights reserved.</marquee>
+    </footer>
+</body>
+
+</html>
